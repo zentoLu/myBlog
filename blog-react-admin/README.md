@@ -1,0 +1,124 @@
+
+![效果图1.gif](https://upload-images.jianshu.io/upload_images/12890819-226f48af9087c3cf.gif?imageMogr2/auto-orient/strip)
+
+![效果图 2](https://upload-images.jianshu.io/upload_images/12890819-f3b950acbffb944b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+# 前言
+
+此 blog-react-admin 项目是基于 [蚂蚁金服开源的 ant design pro](https://pro.ant.design/index-cn) 之上，用 react 全家桶 + Ant Design  的进行再次开发的，项目已经开源，项目地址在 github 上。
+
+效果预览 [https://preview.pro.ant.design/user/login](https://preview.pro.ant.design/user/login)
+
+# 1. 后台管理
+
+## 1.1 已经实现功能
+
+- [x] 登录  
+- [x] 文章管理
+- [x] 标签管理  
+- [x] 留言管理
+- [x] 用户管理
+- [x] 友情链接管理
+- [x] 时间轴管理
+- [x] 富文本编辑器（支持 MarkDown 语法）
+
+## 1.2 待实现功能
+
+- [ ] 点赞、留言和评论 的通知管理
+- [ ] 评论管理
+- [ ] 个人中心（用来设置博主的各种信息）
+- [ ] 工作台（ 接入百度统计接口，查看网站浏览量和用户访问等数据 ）
+
+# 2. 主要项目结构
+
+```
+- pages
+  - Account 博主个人中心
+  - article 文章管理
+  - Category 分类
+  - Dashboard 工作台
+  - Exection 403 404 500 等页面
+  - Link 链接管理
+  - Message 留言管理
+  - OtherUser 用户管理
+  - Tag 标签管理
+  - TimeAsix 时间轴
+  - User 登录注册管理
+```
+
+文章管理、用户管理、留言等 具体业务需求，都是些常用的逻辑可以实现的，也很简单，这里就不展开讲了。
+
+# 3. 添加富文本编辑器，同样支持 markdown 语法 
+
+添加的编辑器为 [simplemde-markdown-editor](https://github.com/sparksuite/simplemde-markdown-editor)
+
+效果图
+
+
+![效果图1](https://user-images.githubusercontent.com/24362914/49021611-01c45080-f1ce-11e8-988a-8c1064a448de.png)
+
+
+参考的文章为 [react 搭建博客---支持markdown的富文本编辑器](https://segmentfault.com/a/1190000010616632)
+
+
+# 4. 使用
+
+使用详情请查看 [Ant Design Pro ](https://pro.ant.design/docs/getting-started-cn)，因为本项目也是在这个基础之上，按这个规范来构建的。
+
+
+# 5. 缺点
+
+开发时，程序出错后，修改正确后，webpack 有时不会及时查觉到内容已经更改，从而不能及时编译，要重新运行命令打包。
+
+# 6. 项目地址
+
+开源不易，如果觉得该项目不错或者对你有所帮助，欢迎到 github 上给个 star，谢谢。
+
+**项目地址：**
+> [前台展示: https://github.com/biaochenxuying/blog-react](https://github.com/biaochenxuying/blog-react)
+
+> [管理后台：https://github.com/biaochenxuying/blog-react-admin](https://github.com/biaochenxuying/blog-react-admin)
+
+> [后端：https://github.com/biaochenxuying/blog-node](https://github.com/biaochenxuying/blog-node)
+
+> [blog：https://github.com/biaochenxuying/blog](https://github.com/biaochenxuying/blog)
+
+**本博客系统的系列文章：**
+
+- 1. [react + node + express + ant + mongodb 的简洁兼时尚的博客网站](http://biaochenxuying.cn/articleDetail?article_id=5bf57a8f85e0f13af26e579b)
+- 2. [react + Ant Design + 支持 markdown 的 blog-react 项目文档说明](http://biaochenxuying.cn/articleDetail?article_id=5bf6bb5e85e0f13af26e57b7)
+- 3. [基于 node + express + mongodb 的 blog-node 项目文档说明](http://biaochenxuying.cn/articleDetail?article_id=5bf8c57185e0f13af26e7d0d)
+- 4. [服务器小白的我,是如何将node+mongodb项目部署在服务器上并进行性能优化的](http://biaochenxuying.cn/articleDetail?article_id=5bfa728bb54f044b4f9da240)
+
+# 7. Build Setup ( 构建安装 )
+
+``` 
+# install dependencies
+npm install 
+
+# serve with hot reload at localhost: 3000
+npm start 
+
+# build for production with minification
+npm run build 
+```
+
+如果要看完整的效果，是要和后台项目  **[blog-node](https://github.com/biaochenxuying/blog-node)** 一起运行才行的，不然接口请求会失败。
+
+# 8. 最后
+
+
+鉴于问问题的人有点多，小汪时间有限，处理不过来，大家可以加入 QQ 群：**186045338**，加群暗号：**全栈修炼** ，一起相互交流学习。
+
+
+对 **全栈开发** 有兴趣的朋友可以扫下方二维码关注我的公众号，我会不定期更新有价值的内容。
+
+关注公众号并回复 **福利** 便免费送你视频资源，绝对干货。
+
+福利详情请点击：  [免费资源分享--Python、Java、Linux、Go、node、vue、react、javaScript](https://mp.weixin.qq.com/s?__biz=MzA4MDU1MDExMg==&mid=2247483711&idx=1&sn=1ffb576159805e92fc57f5f1120fce3a&chksm=9fa3c0b0a8d449a664f36f6fdd017ac7da71b6a71c90261b06b4ea69b42359255f02d0ffe7b3&token=1560489745&lang=zh_CN#rd)
+
+![BiaoChenXuYing](https://upload-images.jianshu.io/upload_images/12890819-091ccce387e2ea34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+
+
